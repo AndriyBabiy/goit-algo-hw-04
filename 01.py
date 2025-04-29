@@ -56,7 +56,7 @@ def timed(func, func_name = ""):
 
 if __name__ == "__main__":
     random.seed(42)
-    arr = random.choices(range(100), k=10000)
+    arr = random.choices(range(100), k=100000)
     # print(arr)
     timed(Sorting().merge_sort(arr), "merge_sort")
     timed(Sorting().insertion_sort(arr), "insertion_sort")
